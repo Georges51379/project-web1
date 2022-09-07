@@ -1,0 +1,58 @@
+<!--START SLIDESHOW SECTION---->
+<div class="slideshow-container">
+      <div class="mySlides">
+<div class="right_slide">
+        <img src="img/slideshow/action.png" class="slideshow_img" style="width:100%">
+</div>
+      </div>
+
+      <div class="mySlides">
+<div class="center_slide">
+        <img src="img/slideshow/dressup.png"  class="slideshow_img" style="width:100%">
+</div>
+      </div>
+
+      <div class="mySlides">
+<div class="left_slide">
+        <img src="img/slideshow/killer.png"  class="slideshow_img" style="width:100%">
+</div>
+      </div>
+
+      <div class="mySlides">
+<div class="left_slide">
+        <img src="img/slideshow/puzzle.png"  class="slideshow_img" style="width:100%">
+</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "inline";
+  }
+
+  slides[slideIndex-1].style.display = "none";
+}
+</script>
+<!--END SLIDESHOW SECTION--->

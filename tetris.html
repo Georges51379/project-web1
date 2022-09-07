@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Raleway&display=swap" rel="stylesheet">
+    <!--INDEX.CSS FILE --->
+    <link rel="stylesheet" href="css/index.css">
+<style>
+
+.wrapper {
+    margin-top: 15px;
+    margin-left: 420px;
+    width: 550px;
+    background: linear-gradient(to right,#16191a , #242424, #16191a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+canvas{
+    background-color: rgb(13, 13, 15);
+}
+
+#nextCanvas{
+    background-color: #000204e8;
+    box-shadow: none;
+}
+
+.result-container {
+    background-color: #32CD32;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.result-container #game-header{
+    height: 20%;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.result-container #score{
+    height: 15%;
+}
+
+.result-container #next-block{
+    display: block;
+    align-self: center;
+    height: 45%;
+    width: 100%;
+    text-align: center;
+}
+/* moblie */
+.result-container #mobile__contorls{
+    align-self: center;
+    color: white;
+    font-weight: normal;
+    font-size: 1.1125rem;
+    height: 40%;
+    width: 100%;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.result-container #mobile__contorls  #rotate:active{
+    transform: scale(0.95);
+}
+.result-container #mobile__contorls  #leftRight div:active{
+    transform: scale(0.95);
+}
+.result-container #mobile__contorls  #down:active{
+    transform: scale(0.95);
+}
+
+.result-container #mobile__contorls #rotate{
+    border: 1px solid black;
+    background-color: #30336b;
+    border-radius: 5px;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    user-select: none;
+}
+
+.result-container #mobile__contorls #rotate #rotate__text{
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -webkit-user-select:none;
+    user-select: none;
+}
+
+.result-container #mobile__contorls #rotate #rotate__text::before{
+    content: "Rotate";
+}
+.result-container #mobile__contorls #leftRight{
+    margin: 4px 4px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.result-container #mobile__contorls #leftRight div{
+    background-color: #30336b;
+    border-radius: 5px;
+    width: 48%;
+    height: 100%;
+    border: 1px solid black;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.result-container #mobile__contorls #leftRight #left__div{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.result-container #mobile__contorls #down{
+    border: 1px solid black;
+    background-color: #30336b;
+    width: 60%;
+    border-radius: 50%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* moblie */
+
+.result-container #contorls{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.result-container #contorls #controls__play{
+    background-color: #3590ae;
+    font-size: 1.5rem;
+    height: auto;
+    padding: 0.3rem 1.5rem;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.result-container #contorls #controls__play:hover{
+    background-color: rgb(13, 13, 15);
+    color:#3590ae;
+    cursor: pointer;
+}
+
+.result-container #contorls #controls__play:active{
+    transform: scale(0.95);
+}
+
+
+.hidden{
+    color: #fff;
+    font-family: 'Caveat';
+    visibility: hidden;
+}
+.hidden2{
+    color:#fff;
+    font-family: 'Raleway';
+    visibility: hidden;
+}
+</style>
+<!--TITLE PART--->
+    <title>Glitch & Grind | Tetris Game</title>
+<!--ICON SECTION-->
+    <link rel="shortcut icon" href="img/icons/logo_transparent.png">
+
+</head>
+
+<body>
+
+<!--HEADER PART---->
+  <a href="index.html">
+  <img src="img/icons/logo_transparent.png" class="logo">
+</a>
+
+  <nav class="topnav">
+    <a class="topnav_links" href="#">games</a>
+    <a class="topnav_links" href="aboutus.html">about us</a>
+    <a class="topnav_links" href="contactus.html">contact us</a>
+    <div class="animation start-home"></div>
+  </nav>
+
+  <div class="category_div">
+    <div class="cat">
+      <a href="cars.html" class="category_links" target="_self">
+          <img src="img/cat_img/sedan-car-model.png" class="categories_img">
+          <br>&nbsp; car
+      </a>
+    </div>
+
+    <div class="cat">
+      <a href="cooking.html" class="category_links" target="_self">
+          <img src="img/cat_img/chef.png" class="categories_img">
+          <br>&nbsp; cooking
+      </a>
+    </div>
+
+    <div class="cat">
+      <a href="shooting.html" class="category_links" target="_self">
+          <img src="img/cat_img/gun.png" class="categories_img">
+          <br>&nbsp; shooting
+      </a>
+    </div>
+
+    <div class="cat">
+      <a href="racing.html" class="category_links" target="_self">
+          <img src="img/cat_img/bike.png" class="categories_img">
+          <br>&nbsp; racing
+      </a>
+    </div>
+
+    <div class="cat">
+      <a href="dressup.html" class="category_links" target="_self">
+          <img src="img/cat_img/high-heels.png" class="categories_img">
+          <br>&nbsp; dress up
+      </a>
+    </div>
+
+    <div class="cat">
+      <a href="puzzle.html" class="category_links" target="_self">
+          <img src="img/cat_img/puzzle-piece.png" class="categories_img">
+          <br>&nbsp; puzzle
+      </a>
+    </div>
+
+    <div class="cat">
+      <a href="kids.html" class="category_links" target="_self">
+          <img src="img/cat_img/little-kid.png" class="categories_img">
+          <br>&nbsp; kids
+      </a>
+    </div>
+
+    <div class="cat">
+      <a href="strategy.html" class="category_links" target="_self">
+          <img src="img/cat_img/chess-pieces.png" class="categories_img">
+          <br>&nbsp; strategy
+      </a>
+    </div>
+
+    <div class="cat">
+      <a href="action.html" class="category_links" target="_self">
+          <img src="img/cat_img/bomb.png" class="categories_img">
+          <br>&nbsp; action
+      </a>
+    </div>
+
+    <div class="cat">
+      <a href="multi.html" class="category_links" target="_self">
+          <img src="img/cat_img/customer.png" class="categories_img">
+          <br>&nbsp; multi
+      </a>
+    </div>
+
+    <div class="cat">
+      <a href="sport.html" class="category_links" target="_self">
+          <img src="img/cat_img/running.png" class="categories_img">
+          <br>&nbsp; sport
+      </a>
+    </div>
+
+    <div class="cat">
+      <a href="girl.html" class="category_links" target="_self">
+          <img src="img/cat_img/regular.png" class="categories_img">
+          <br>&nbsp; girl
+      </a>
+    </div>
+
+    <div class="cat">
+      <a href="survival.html" class="category_links" target="_self">
+          <img src="img/cat_img/fire.png" class="categories_img">
+          <br>&nbsp; survival
+      </a>
+    </div>
+
+    <div class="cat">
+      <a href="adventure.html" class="category_links" target="_self">
+          <img src="img/cat_img/adventure.png" class="categories_img">
+          <br>&nbsp; adventure
+      </a>
+    </div>
+
+    <div class="cat">
+      <a href="idle.html" class="category_links" target="_self">
+          <img src="img/cat_img/idle.png" class="categories_img">
+          <br>&nbsp; idle
+      </a>
+    </div>
+
+    <div class="cat">
+      <a href="simulation.html" class="category_links" target="_self">
+          <img src="img/cat_img/simulation.png" class="categories_img">
+          <br>&nbsp; simulation
+      </a>
+    </div>
+  </div>
+
+<!---END CATEGORY NAV SECTION--->
+
+
+<div class="wrapper">
+
+    <canvas id="myCanvas"></canvas>
+    <div class="result-container">
+        <div id="game-header"><p>TETRIS</p></div>
+        <div id="score" class="score">
+            <p>Score: <span id="score__text">0</span></p>
+            <p>Level: <span id="level__text">1</span></p>
+        </div>
+        <div id="next-block" class="next-block">
+            <canvas id="nextCanvas"></canvas>
+        </div>
+        <div id="mobile__contorls" class="mobile__contorls">
+            <div id="rotate"><div id="rotate__text"></div></div>
+            <div id="leftRight">
+                <div id="left__div">
+                    <i class="fas fa-chevron-left fa-2x"></i>
+            </div>
+            <div id="right__div">
+                <i class="fas fa-chevron-right fa-2x"></i>
+            </div>
+        </div>
+            <div id="down">Down</i></div>
+        </div>
+        <div id="contorls" class="contorls"><span id="controls__play">Play</span></div>
+    </div>
+</div>
+
+
+    
+    <script src="js/piece.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

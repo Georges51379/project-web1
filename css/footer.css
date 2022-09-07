@@ -1,0 +1,22 @@
+.footer{
+  background-color: #d3d3d3;
+  margin-left: 200px;
+  margin-right: 385px;
+  
+}
+
+.footer_icon_image{
+  width: 20px;
+  height: 20px;
+}
+
+.footer_sm{
+  text-decoration: none;
+}
+
+.title_footer_sm{
+  text-transform: capitalize;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bolder;
+}

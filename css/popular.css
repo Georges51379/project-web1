@@ -1,0 +1,19 @@
+.popular_games{
+  margin-left: 750px;
+  margin-top: -460px;
+  background-color: #d3d3d3;
+  width: 350px;
+}
+
+.title_popular{
+  text-transform: capitalize;
+  font-size: 22px;
+  text-decoration: underline;
+  margin-left: 22px;
+  padding-top: 10px;
+    color: red;
+}
+
+.icon_pop{
+  float: right;
+}

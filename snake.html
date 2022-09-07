@@ -1,0 +1,40 @@
+<html>
+  <head>
+<!--TITLE SECTION-->
+          <title>Glitch & Grind | Snake Game</title>
+<!--ICON SECTION-->
+          <link rel="shortcut icon" href="img/icons/logo_transparent.png">
+<!--SLIDESHOW.CSS FILE--->
+          <link href="css/slideshow.css" rel="stylesheet">
+<!---SNAKE.CSS FILE-->
+          <link href="css/snake.css" rel="stylesheet">
+
+<!--FONT AWESOME CDN-->
+          <script src="https://kit.fontawesome.com/6bf7759189.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div id="wrapper" class="wrapper">
+      <div class="popup-screen animated bounceIn">
+        <h2>🐍</h2>
+
+        <div class="settings">
+          <h3>Choose Difficulty</h3>
+          <p class="end-score"></p>
+          <button data-difficulty="100" class="active">Easy</button>
+          <button data-difficulty="75">Medium</button>
+          <button data-difficulty="50">Hard</button>
+        </div>
+
+        <button class="playbtn">Play</button>
+      </div>
+
+      <canvas></canvas>
+
+      <div class="score">0</div>
+
+        </div>
+
+      <script src="js/snake.js"></script>
+  </body>
+</html>

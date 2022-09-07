@@ -1,0 +1,88 @@
+<head>
+<!--TITLE SECTION-->
+    <title>Glitch & Grind | About Us</title>
+<!--ICON LINK-->
+    <link rel="shortcut icon" href="img/icons/logo_transparent.png">
+<!--ABOUTUS.CSS LINK-->
+    <link href="css/aboutus.css" rel="stylesheet">
+    <!--FONT AWESOME CDN-->
+              <script src="https://kit.fontawesome.com/6bf7759189.js" crossorigin="anonymous"></script>
+
+
+  </head>
+
+  <body>
+    <h1 class="title">about me</h1>
+
+<!--topnav part-->
+<a href="index.html">
+<img src="img/icons/logo_transparent.png" class="logo">
+</a>
+
+    <nav class="topnav">
+      <a class="topnav_links" href="index.html">games</a>
+      <a class="topnav_links" id="active" href="aboutus.html">about us</a>
+      <a class="topnav_links" href="contactus.html">contact us</a>
+      <div class="animation start-home"></div>
+    </nav>
+<!--END TOP NAV PART--->
+
+
+    <p class="aboutme_intro">
+      <strong>This page will let the user to get to:</strong>
+      <ul class="aboutme_ul">
+        <li class="aboutme_li">knows me better</li>
+        <li class="aboutme_li">knows what are my hobbies</li>
+        <li class="aboutme_li">what is my age</li>
+        <li class="aboutme_li">knows why i choose computer science as a major</li>
+        </ul>
+    </p>
+
+    <div class="aboutme_div">
+      <strong>Georges Boutros</strong><br>
+      <img src="img/profile/me.png" class="myprofile"><br>
+
+      <p class="aboutme">
+          Hello dear visitors, my name is Georges Boutros.I was born
+          in July 14, 1998. So I am 24 years old. <br>
+          I like to play football, basketball, volleyball, swimming
+          and so on.<br>
+          I like also to watch videos about new technologies and coding
+          languages in my free time.<br>
+          My passion towards computers and my curiousity to see how do they
+          function and work led me to choose computer science.<br>
+          I like also playing video games specially multiplayer games with my friends<br>
+          I am making this website as a project for the Web1 course.
+      </p>
+    </div>
+
+<!--ARROW TO TOP PART--->
+    <button onclick="to_topfunction()" id="to_top_btn" title="Go to top">
+      <i class="fa fa-angle-double-up"></i></button>
+
+
+    <script>
+    //Get the button
+    var totopbutton = document.getElementById("to_top_btn");
+
+    // DISPLAY BUTTON AFTER 50PIXELS FROM SCROLLING
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        totopbutton.style.display = "block";
+      } else {
+        totopbutton.style.display = "none";
+      }
+    }
+
+    // WHEN THE USER CLICKS
+    function to_topfunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+<!--END ARROW TO TOP PART-->
+
+
+  </body>

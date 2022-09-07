@@ -1,0 +1,62 @@
+.category_wrapper{
+    background-color: #d3d3d3;
+    margin-left: 200px;
+    margin-right: 385px;
+    width: 700px;
+    display: inline-block;
+
+}
+
+.wrapper_title{
+  text-transform: capitalize;
+  font-size: 22px;
+  text-decoration: underline;
+  margin-left: 22px;
+  padding-top: 10px;
+}
+
+.wrapper_title:hover{
+  color: red;
+}
+
+#games {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+
+.games_playable{
+  text-decoration: none;
+  color: black;
+}
+
+.game, .populargame {
+    flex: 0 1 calc(25% - 1em);
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 5px;
+    margin-left: 22px;
+    margin-bottom: 15px;
+    background-color: white;
+    padding: 25px;
+}
+
+.games_img{
+  width: 262px;
+  height: 200px;
+}
+
+.checked{
+  color: blue;
+}
+
+.games_name{
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.games_description{
+  font-size: 15px;
+  font-weight: lighter;
+  font-style: oblique;
+}

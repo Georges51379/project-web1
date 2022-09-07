@@ -1,0 +1,142 @@
+<head>
+<!--TITLE SECTION-->
+    <title>Glitch & Grind | Contact Us</title>
+<!--ICON LINK-->
+    <link rel="shortcut icon" href="img/icons/logo_transparent.png">
+<!--ABOUTUS.CSS LINK-->
+    <link href="css/contactus.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <h1 class="title">contact us</h1>
+
+<!--topnav part-->
+    <a href="index.html">
+    <img src="img/icons/logo_transparent.png" class="logo">
+  </a>
+
+    <nav class="topnav">
+      <a class="topnav_links" href="index.html">games</a>
+      <a class="topnav_links" href="aboutus.html">about us</a>
+      <a class="topnav_links" id="active" href="contactus.html">contact us</a>
+      <div class="animation start-home"></div>
+    </nav>
+<!--END TOP NAV PART--->
+
+<!--CONTACT US-->
+
+  <div class="service">
+    <p class="customerservice">
+      Customer service:<br>
+    </p>
+
+    <p class="customerservice_links">
+        <i ><img src="img/icons/wtp.png" class="logo_links_wtp"></i>
+        <a href="https://api.whatsapp.com/send?phone=76402484" class="logo_links" target="_blank">76126703</a>&emsp;
+        <i ><img src="img/icons/gmail.png" class="logo_links_mail"></i>
+        <a href="mailto:tdaou715@gmail.com " class="logo_links" target="_blank">boutros.georges513@gmail.com</a>
+    </p>
+  </div>
+
+  <form class="contactus_form">
+    <fieldset>
+      <legend>personal information</legend>
+      <label for="fullname">
+          <i class="fa fa-user"></i>
+      </label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name here...">
+      <br>
+
+      <label for="email">
+        <i class="fa fa-envelope"></i>
+      </label>
+      <input type="email" id="email" name="email" placeholder="Enter your email here...">
+        <br>
+
+      <label for="msg">
+        <i class="fa fa-comment"></i>
+      </label>
+      <textarea id="msg" name="msg" placeholder="Enter your message here..."></textarea>
+      <br>
+
+      <label for="phone">
+        <i class="fa fa-phone"></i>
+      </label>
+      <input type="number" name="phone" id="phone" placeholder="Enter your phone number here...">
+  </fieldset>
+
+  <fieldset>
+    <legend>age</legend>
+      <label for="age">
+        <i class="fa fa-calendar-alt"></i>
+      </label>
+      <input type="date" name="age" id="age">
+  </fieldset>
+
+  <fieldset>
+    <legend>location</legend>
+      <label for="continent">
+        <i class="fa fa-globe"></i>
+        </label>
+      <select name="country" id="continent">
+        <option>Europe</option>
+        <option>Asia </option>
+        <option>Africa</option>
+        <option>South america</option>
+        <option>North america</option>
+        <option>Oceania</option>
+        <option>Antarctica</option>
+      </select>
+      <br>
+
+      <label for="country">
+      <i class="fa fa-home"></i>
+      </label>
+      <input type="text" name="country" id="country" placeholder="Enter your country here...">
+      <br>
+
+      <label for="city">
+        <i class="fa fa-home"></i>
+      </label>
+      <input type="text" name="city" id="city" placeholder="Enter your city here...">
+
+  </fieldset>
+
+  <button class="submitbtn" type="submit" value="submit"><i class="fa fa-share-square"></i>
+    Submit </button>
+
+  </form
+
+<!--END CONTACT US-->
+
+<!--ARROW TO TOP PART--->
+    <button onclick="to_topfunction()" id="to_top_btn" title="Go to top">
+      <i class="fa fa-angle-double-up"></i></button>
+
+
+    <script>
+    //Get the button
+    var totopbutton = document.getElementById("to_top_btn");
+
+    // DISPLAY BUTTON AFTER 50PIXELS FROM SCROLLING
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        totopbutton.style.display = "block";
+      } else {
+        totopbutton.style.display = "none";
+      }
+    }
+
+    // WHEN THE USER CLICKS
+    function to_topfunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+<!--END ARROW TO TOP PART-->
+<!--FONT AWESOME CDN-->
+          <script src="https://kit.fontawesome.com/6bf7759189.js" crossorigin="anonymous"></script>
+  </body>

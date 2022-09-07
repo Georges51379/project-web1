@@ -1,0 +1,117 @@
+/*ABOUT ME PART**/
+
+body{
+  background-color: #fdf5e6;
+}
+.title{
+  text-align: center;
+  text-transform: capitalize;
+  writing-mode: vertical-lr;
+  transform: rotate(-145deg);
+  border: 5px solid red;
+}
+
+strong{
+  font-size: 25px;
+}
+
+.aboutme_intro, .aboutme_ul{
+  margin-left: 750px;
+}
+
+.aboutme_li{
+  text-transform: capitalize;
+  line-height: 25px;
+  font-size:  20px;
+  font-family: cursive;
+}
+
+.aboutme_div{
+  text-align: center;
+  margin-top: 150px;
+}
+
+.myprofile{
+  width:  350px;
+  height: 350px ;
+}
+
+.aboutme{
+  line-height: 30px;
+  font-family: monospace;
+  font-style: oblique;
+  font-size: 20px;
+}
+
+/*END ABOUT ME PART**/
+
+/*LOGO PART*/
+.logo{
+  width: 250px;
+  height: 250px;
+  margin-left: 270px;
+  margin-top: 0px;
+}
+/*END LOGO PART*/
+
+/*TOPNAV STYLE PART*/
+.topnav{
+	position: relative;
+	margin-top: 70px;
+  margin-right: 450px;
+	width: 311px;
+	height: 50px;
+	font-size: 0;
+  float: right;
+}
+.topnav .topnav_links{
+	font-size: 22px;
+	text-transform: capitalize;
+	color: #191970;
+	text-decoration: none;
+	line-height: 90px;
+	position: relative;
+	z-index: 2;
+  margin-left: 10px;
+	display: inline-block;
+	text-align: center;
+}
+
+.topnav #active{
+  border-radius: 5px;
+  background: blue;
+  top: 0;
+  transition: all .5s ease 0s;
+  height: 5px;
+}
+
+.topnav .animation{
+	position: absolute;
+	height: 5px;
+	top: 0;
+	background: red; /*midnight bluecode*/
+	border-radius: 5px;
+	transition: all .5s ease 0s;
+}
+
+/*END TOPNAV STYLE PART*/
+
+
+/*ARROW TO TOP STYLE*/
+#to_top_btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: #00008b;
+  color: #add8e6;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  border: 4px solid #add8e6;
+}
+
+#to_top_btn:hover {
+  background-color: #555;
+}
+/*END ARROW TO TOP STYLE*/
